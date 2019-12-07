@@ -83,7 +83,7 @@ class Nexus3Cmd:
             else:
                 repository.upload_file(src, dest)
         else:
-            print("%s not exists" % src, output=sys.stderr)	
+            print("%s not exists" % src, file=sys.stderr)	
 
 if __name__ == '__main__':
     x = Nexus3Cmd()
